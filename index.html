@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+<title>Centre for Leadership & Entrepreneurship</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<!-- Stylesheets-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400,500%7CRaleway:300,o400,400i,500,600,700">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style-v%3d6.css" id="main-styles-link">
+<link rel="stylesheet" href="assets/css/flipclock.css">
+<!--[if lt IE 10]>
+<div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="assets/img/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
+<style>.flip-clock-wrapper {
+text-align: center;
+position: relative;
+width: 100%;
+margin: 1em 0;
+}
+.icon-bar {
+position: fixed;z-index: 99999;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.icon-bar a {
+display: block;
+text-align: center;
+padding: 10px;
+transition: all 0.3s ease;
+color: white;
+}
+.icon-bar a:hover {
+background-color: #000;
+}
+.facebook {
+background: #3B5998;
+color: white;
+}
+.twitter {
+background: #55ACEE;
+color: white;
+}
+.google {
+background: #dd4b39;
+color: white;
+}
+.youtube {
+background: #dd4b39;
+color: white;
+}
+.linkedin {
+background: #007bb5;
+color: white;
+}
+.instagram {
+background: #bb0000;
+color: white;
+}
+.content {
+margin-left: 75px;
+font-size: 30px;
+}
+.context-dark .button.button-ujarak:not([class*=button-secondary]):hover, .bg-gray-dark .button.button-ujarak:not([class*=button-secondary]):hover, .bg-primary .button.button-ujarak:not([class*=button-secondary]):hover, .box-countdown-dark .button.button-ujarak:not([class*=button-secondary]):hover, .context-dark .button.button-ujarak:not([class*=button-secondary]):active, .bg-gray-dark .button.button-ujarak:not([class*=button-secondary]):active, .bg-primary .button.button-ujarak:not([class*=button-secondary]):active, .box-countdown-dark .button.button-ujarak:not([class*=button-secondary]):active {
+border-color: #F44336;
+}
+.context-dark .button.button-ujarak:not([class*=button-secondary])::before, .bg-gray-dark .button.button-ujarak:not([class*=button-secondary])::before, .bg-primary .button.button-ujarak:not([class*=button-secondary])::before, .box-countdown-dark .button.button-ujarak:not([class*=button-secondary])::before {
+background: #F44336;
+}
+.post-aria-list-social .icon::after {
+background: #F44336;
+}
+.rd-navbar-static .rd-navbar-dropdown li>a::before, .rd-navbar-static .rd-megamenu-list li>a::before {
+background: red;
+}
+h4, .heading-4 {
+font-size: 28px;
+}
+.quote-lisa-text::before, .quote-lisa-text::after, .quote-nancy-quote::before {
+color: red;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color:red;
+  margin-top:30px;
+  width:120px;
+  height:40px;
+  line-height: 40px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(61, 59, 59) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.popup a {
+    font-size:22px;
+    color:white;
+    font-weight:bold;
+}
+.popup a:hover{
+    color:rgb(97, 223, 97);
+}
+.slider-modern-box p{text-shadow: 0px 0px 3px white;}
+h4.slider-modern-title, h3.slider-modern-title{
+color: rgba(0,0,0,.9);
+text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+}
+.team-nikki{
+max-width:unset;
+}
+.team-nikki-status{
+font-size:unset;
+line-height:unset;
+font-weight:unset;
+text-transform:unset;
+}
+.partner .box-icon-modern-icon:after{
+border-color: transparent transparent #f33131 transparent !important;
+}
+h5.team-nikki-name {
+background: transparent !important;
+}
+.unit-spacing-xs>* {
+margin-bottom: 5px;
+}
+.quote-classic-text::before{
+color:red;
+}
+.unit flex-column {
+ background-color:green;
+
+}
+</style>
+</head>
+<body>
+<div class="icon-bar">
+<a href="https://www.facebook.com/celeen.initiative" class="facebook"><span class="fa fa-facebook"></span></a>
+<a href="#" class="youtube"><span class="fa fa-youtube"></span></a>
+<a href="https://www.linkedin.com/in/celeen-initiative-00663418b" target="_blank" class="linkedin"><span class="fa fa-linkedin"></span></a>
+<a href="https://www.instagram.com/celeeninitiative/" target="_blank" class="instagram"><span class="fa fa-instagram"></span></a>
+</div>
+<div class="preloader loaded">
+<div class="preloader-body">
+<div class="cssload-container"><span></span><span></span><span></span><span></span>
+</div>
+</div>
+</div>
+<div class="page">
+<header class="section page-header">
+<!-- RD Navbar-->
+<div class="rd-navbar-wrap rd-navbar-modern-wrap">
+<nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+<div class="rd-navbar-main-outer">
+<div class="rd-navbar-main">
+<!-- RD Navbar Panel-->
+<div class="rd-navbar-panel">
+<!-- RD Navbar Toggle-->
+<button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+<!-- RD Navbar Brand-->
+<div class="rd-navbar-brand">
+<a class="brand">
+<img src="assets/img/logo2-1.png" alt="" height="60"/>
+</a>
+</div>
+</div>
+<div class="rd-navbar-main-element">
+<div class="rd-navbar-nav-wrap">
+<!-- RD Navbar Nav-->
+<ul class="rd-navbar-nav">
+<li class="rd-nav-item active"><a class="rd-nav-link" href="index.cfm-pg%3dHome.html">Home</a></li>
+<li class="rd-nav-item "><a class="rd-nav-link" href="index.cfm-pg%3dAbout.html">About</a></li>
+<li class="rd-nav-item"><a class="rd-nav-link" href="#">Events</a>
+<ul class="rd-menu rd-navbar-megamenu">
+<li class="rd-megamenu-item">
+<h5 class="rd-megamenu-title">Our Programmes</h5>
+<ul class="rd-megamenu-list">
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d1.html">Quarterly Leadership and Entrepreneurship Seminar</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d2.html">Young Leaders and Entrepreneurs on TV</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d3.html">Young Adults Leadership TV Reality Show</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d4.html">Summer Leadership & Enterpreneurship Camp</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d5.html">Summer Leadership for Undergraduates</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d6.html">Summer Business Camp for Undergraduates</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d7.html">Career Development Centre</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d8.html">Young Innovators</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d9.html">The Virtuous Girl-Child</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d10.html">The Dependable Young Man</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d11.html">The Annual National Prefect Conference</a></li>
+<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="index.cfm-pg%3devent%26id%3d12.html">Leadership and Entrepreneurship Training for Educators</a></li>
+</ul>
+</li>
+<li class="rd-megamenu-item rd-megamenu-carousel">
+<div style="width:300px">
+<h5 class="rd-megamenu-title">Previous Event</h5>
+<div class="row">
+<div class="col-sm-6">
+<img src="assets/img/navbar-1-272x288.jpg" class="img-fluid">
+</div>
+<div class="col-sm-6">
+<img src="assets/img/navbar-2-272x288.jpg" class="img-fluid">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="rd-nav-item "><a class="rd-nav-link" href="index.cfm-pg%3dGallery.html">Gallery</a></li>
+<li class="rd-nav-item "><a class="rd-nav-link" href="index-pg=Blog.html">Blog</a></li>
+<li class="rd-nav-item "><a class="rd-nav-link" href="index.cfm-pg%3dContact.html">Contact</a></li>
+</ul>
+</div>
+<div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+<div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+<div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+</div>
+<div class="project-close"><span></span><span></span></div>
+</div>
+</div>
+<div class="rd-navbar-project rd-navbar-modern-project">
+<div class="rd-navbar-project-modern-header">
+<h4 class="rd-navbar-project-modern-title">Get in Touch</h4>
+<div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+<div class="project-close"><span></span><span></span></div>
+</div>
+</div>
+<div class="rd-navbar-project-content rd-navbar-modern-project-content">
+<div>
+<p class="text-spacing-25">If you have any questions or suggestions for Us, don’t hesitate contacting us directly or via our <a href="index-pg%3dcontact.html">Contact</a> page</p>
+<div class="row row-10 gutters-10">
+<div class="col-12"><img src="assets/img/b1.png" alt="" width="394" height="255"/>
+</div>
+</div>
+<ul class="rd-navbar-modern-contacts">
+<li>
+<div class="unit unit-spacing-sm">
+<div class="unit-left"><span class="icon fa fa-phone"></span></div>
+<div class="unit-body"><a class="link-phone" href="tel:#">+234 8098 024 131</a></div>
+</div>
+</li>
+<li>
+<div class="unit unit-spacing-sm">
+<div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+<div class="unit-body"><a class="link-location" href="#">41, Adekunle Banjo Avenue, Magodo G.R.A.2, Shangisha, Ketu, Lagos, Nigeria</a></div>
+</div>
+</li>
+<li>
+<div class="unit unit-spacing-sm">
+<div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+<div class="unit-body"><a class="link-email" ><span class="__cf_email__">info(at)celeen.org</span></a></div>
+</div>
+</li>
+</ul>
+<ul class="list-inline rd-navbar-modern-list-social">
+<li><a class="icon fa fa-facebook" target="_blank" href="https://www.facebook.com/celeen.initiative"></a></li>
+<li><a class="icon fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/celeen-initiative-00663418b"></a></li>
+<li><a class="icon fa fa-youtube"></a></li>
+<li><a class="icon fa fa-instagram" target="_blank" href="https://www.instagram.com/celeeninitiative/"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<style>.slider-modern-box {
+background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0));
+padding:25px;
+}
+.flip-clock-label {color:white !important;}
+</style>
+<!-- Swiper-->
+<section class="section swiper-container swiper-slider swiper-slider-modern" data-loop="true" data-autoplay="true" data-simulate-touch="true" data-nav="true" data-slide-effect="fade">
+<div class="swiper-wrapper text-left">
+<div class="swiper-slide" data-slide-bg="assets/img/slider-7.jpg" data-swiper-autoplay="7500">
+<div class="swiper-slide-caption">
+<div class="container">
+<div class="row justify-content-md-end">
+<div class="col-md-8 col-xl-6">
+<div class="slider-modern-box modern-box-right">
+<h4 class="oh slider-modern-title"><span data-caption-animate="slideInDown" data-caption-delay="0">Future generation </span><span data-caption-animate="slideInUp" data-caption-delay="0">of leaders and entrepreneurs</span></h4>
+<p data-caption-animate="fadeInRight" data-caption-delay="400">
+We are focused on building a generation of young <br/><i><b>leaders</b></i> and <i><b>entrepreneurs</b></i> in Nigeria from teen to adulthood
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide" data-slide-bg="assets/img/slider9.jpg?id=v" data-swiper-autoplay="7500">
+<div class="swiper-slide-caption">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-xl-6">
+<div class="slider-modern-box">
+<h3 class="oh slider-modern-title"><span data-caption-animate="slideInLeft" data-caption-delay="0">High Schools &</span><span data-caption-animate="slideInUp" data-caption-delay="0">Tertiary Institutions</span></h3>
+<p data-caption-animate="fadeInRight" data-caption-delay="400">Partnering with high schools and tertiary institutions to transform their school culture and prepare the emerging generation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide" data-slide-bg="assets/img/slider7.jpg" data-swiper-autoplay="7500">
+<div class="swiper-slide-caption">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-xl-6">
+<div class="slider-modern-box">
+<h3 class="oh slider-modern-title"><span data-caption-animate="slideInDown" data-caption-delay="0">Preparing for</span><span data-caption-animate="slideInLeft" data-caption-delay="0">Tomorrow!</span></h3>
+<p data-caption-animate="fadeInRight" data-caption-delay="400">Our programmes are designed to resonate with today's young adults and help them prepare better for the future with the skills and values they require...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Swiper Navigation-->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<!-- Swiper Pagination-->
+<div class="swiper-pagination swiper-pagination-style-2"></div>
+</section>
+<!-- Icons Ruby-->
+<section class="section section-sm bg-default">
+<div class="container">
+<div class="row row-30 text-justify">
+<div class="col-sm-12 wow fadeInRight" data-wow-delay="0s">
+<h3>Who We Are</h3>
+<p>
+We are <strong>CELEEN INITIATIVE</strong>, a centre for leadership and entrepreneurship, stanch to nurture leadership values and
+entrepreneurship skills in teenagers between the ages of 10 and 18 years in Nigeria.
+<br/><br/>
+We are building the future generation of leaders and entrepreneurs of our nation to meet emerging and future challenges
+through the two-pronged sword of qualitative governance and economic viability.
+<br/><br/>
+Our theme, “nurturing young leaders and entrepreneurs”, is expressed through our high-quality, high value and unique blend of
+professional focus, instructional quality, and the depth of our curriculum that is activity driven to support the concept of
+leadership and entrepreneurship.
+<br/><br/>
+Our programmes are designed to take leadership beyond an academic exercise and concepts to daily practice and habits,
+with entrepreneurship trainings that take our young adults from the realm of skill acquisition into real exposition of
+concepts and principles like innovation, marketing, money management and human management
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section CTA-->
+<section class="section section-sm bg-default text-md-left">
+<div class="parallax-container" data-parallax-img="assets/img/camping-tent.jpg">
+<div class="parallax-content section-sm section-inset-custom-2 context-dark bg-overlay-2-14">
+<div class="container">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-md-8 col-lg-7">
+<div class="text-width-small" style="max-width: 650px;">
+<h4 class="oh font-weight-normal" style="padding-bottom:20px"><span class="d-inline-block wow slideInDown" data-wow-delay="0s">Our Next Event</span></h4>
+<!-- <div class="clock"></div>
+<h5><a href="index-pg%3devent%26id%3d9.html">The Virtuous Girl Child</a> and <a href="index-pg%3devent%26id%3d10.html">The Dependable Young Man</a></h5>
+<p class=" wow fadeInRight" data-wow-delay=".1s" style="margin-top:5px;">
+<i style="font-size:15px; color:#f6c9cb;">
+</b>"</b>...Inspiring leaders and entrepreneurs <i style="background-color:black;">2019</i><b>"</b>
+</i>
+</p>
+<h6 class="wow fadeInRight" style="margin-top: 5px;" data-wow-delay=".1s"><i class="linearicons-calendar-full"></i> October 27th - 29th 2019, <i class="linearicons-map-marker"></i> LAGOS</h6>  -->
+<marquee><i><h1>COMING SOON!!!</h1></i></marquee>
+
+
+
+<div class="unit flex-column flex-lg-row align-items-center offset-top-40"><a class="button button-gray-8 button-ujarak wow fadeInUp" href="index.cfm-pg%3devent%26id%3d4.html" data-wow-delay=".2s">Learn more</a>
+
+
+    <!-- <div class="popup" onclick="myFunction()">Learn More!
+        <span class="popuptext" id="myPopup"><a class="boy"href="index.cfm-pg%3devent%26id%3d10.html">Boy </a>/ <a class="girl" href="index.cfm-pg%3devent%26id%3d9.html">Girl</a></span>
+       
+      </div> -->
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Categories-->
+<section class="section section-sm bg-default">
+<div class="container">
+<div class="oh">
+<div class="title-decoration-lines wow slideInUp" data-wow-delay="0s">
+<h6 class="title-decoration-lines-content">Our Advantage</h6>
+</div>
+</div>
+<style>.fl-bigmug-line-chat55:before {
+color: white;
+}
+</style>
+<div class="row row-70 text-left">
+<div class="col-md-8">
+<p class="text-spacing-100 text-justify">
+The foundation of the Centre is built on our belief that all students have the capacity to rise to the challenges of the emerging future
+as great leaders and entrepreneurs.
+We are partnering with high schools and tertiary institutions in the nation to transform their school culture and prepare the
+emerging generation to step up and facilitate a new narrative for the nation.
+<br/></br>
+The programme starts at the high school level with our trained educators who deliver crafted messages and presentations that will
+guide and motivate the young adults into real-life habitual leadership values and entrepreneurship skills in a way that resonates.
+<br/></br>
+We train educators with life case studies, stories, images and activities that inspire outstanding experiences and engage the young
+adults in a creative and valuable way. We meet the young adults at their level with today’s generational language and get them engaged
+in life-changing conversations.
+<br/>
+<a class="button button-icon button-icon-left button-google button-pipaluk wow fadeInUp" data-wow-delay=".2s"
+style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" href="#">Read more</a>
+</p>
+</div>
+<div class="col-md-4">
+<article class="team-nikki"><a class="team-nikki-figure" href="index-pg%3dcontact.html"><img src="assets/img/partner2.jpg" alt="" width="270" height="248"></a>
+<div class="team-nikki-caption text-center">
+<h5 class="team-nikki-name"><a href="index-pg%3dcontact.html">Partner with Us</a></h5>
+<p class="team-nikki-status">Do you believe our mission? Support our programme through sponsorships and funding.</p>
+<div class="team-nikki-arrow"></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Section CTA 2-->
+<section class="section section-sm bg-default text-center">
+<div class="parallax-container" data-parallax-img="assets/img/bg-cta-3.jpg">
+<div class="parallax-content section-sm context-dark bg-overlay-2-21">
+<div class="container">
+<h3 class="oh font-weight-large"><span class="d-inline-block wow slideInDown" data-wow-delay="0s">Programs for Educators</span></h3>
+<p class="oh text-width-large">
+<span class="d-inline-block wow slideInUp" data-wow-delay=".2s">
+Our Leadership and Entrepreneurship Training for Educators programme will develop the next generation of leaders by training educators to speak the language of today's teenagers and high school students, generating conversations and inspiring memorable experiences that instill valuable leadership and life skills.
+</span>
+</p><a class="button button-gray-8 button-ujarak wow fadeInUp" href="index.cfm-pg%3devent%26id%3d12.html" data-wow-delay=".1s">Learn more</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Teachers-->
+<!-- Grid blog-->
+<section class="section section-sm bg-default text-md-left">
+<div class="container">
+<div class="oh">
+<div class="title-decoration-lines text-center wow slideInUp" data-wow-delay="0s">
+<h6 class="title-decoration-lines-content">Other Events</h6>
+</div>
+</div>
+<div class="row row-60 justify-content-center">
+<div class="col-sm-6 col-lg-4">
+<!-- Post Aria-->
+<article class="post post-aria"><a class="post-aria-figure" href="#"><img src="assets/img/post1.jpg" alt="" width="570" height="4"/></a>
+<div class="post-aria-footer">
+<a href="index.cfm-pg%3devent%26id%3d1.html">Quarterly Leadership and Entrepreneurship Seminar</a>
+<ul class="list-inline group-sm post-aria-list-social">
+<li><a class="icon fa fa-facebook" href="#"></a></li>
+<!-- <li><a class="icon fa fa-twitter" href="#"></a></li> -->
+<li><a class="icon fa fa-instagram" href="#"></a></li>
+</ul>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4">
+<!-- Post Aria -->
+<article class="post post-aria"><a class="post-aria-figure" href="index.cfm-pg%3dGallery.html"><img src="assets/img/post-1.jpg" alt="" width="570" height="450"/></a>
+<div class="post-aria-footer">
+<a href="index.cfm-pg%3devent%26id%3d2.html">Young Leaders and Entrepreneurs on TV</a>
+<ul class="list-inline group-sm post-aria-list-social">
+<li><a class="icon fa fa-facebook" href="#"></a></li>
+<!-- <li><a class="icon fa fa-twitter" href="#"></a></li> -->
+<li><a class="icon fa fa-instagram" href="#"></a></li>
+</ul>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4">
+<!-- Post Aria-->
+<article class="post post-aria"><a class="post-aria-figure" href="#"><img src="assets/img/post-23-570x492.jpg" alt="" width="570" height="450"/></a>
+<div class="post-aria-footer">
+<a href="index.cfm-pg%3devent%26id%3d11.html">The Annual National Prefect Conference</a>
+<ul class="list-inline group-sm post-aria-list-social">
+<li><a class="icon fa fa-facebook></a></li>
+
+<li><a class="icon fa fa-instagram" href="#"></a></li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<footer class="section footer-variant-2 footer-modern context-dark">
+<div class="footer-variant-2-content">
+<div class="container">
+<div class="row row-40 justify-content-between">
+<div class="col-sm-6 col-lg-4 col-xl-3">
+<div class="oh-desktop">
+<div class="wow slideInRight" data-wow-delay="0s">
+<div class="footer-brand"><a>
+<!-- <img src="assets/img/logo3-v%3d2.png" alt="" width="180"/></a> -->
+<img src="assets/img/logo2-1.png" alt="" height="60"/>
+</div>
+<ul class="footer-contacts d-inline-block d-md-block">
+<li>
+<div class="unit unit-spacing-xs">
+<div class="unit-left"><span class="icon fa fa-phone"></span></div>
+<div class="unit-body"><a class="link-phone" href="tel:#">+234 8098 024 131</a></div>
+</div>
+</li>
+<li>
+<div class="unit unit-spacing-xs">
+<div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
+<div class="unit-body">
+<p>Mon-Fri: 08:00AM - 04:00PM</p>
+</div>
+</div>
+</li>
+<li>
+<div class="unit unit-spacing-xs">
+<div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+<div class="unit-body"><a class="link-location" href="#">41, Adekunle Banjo Avenue, Magodo G.R.A.2, Shangisha, Ketu, Lagos, Nigeria</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="oh-desktop">
+<div class="wow slideInDown" data-wow-delay="0s">
+<h5 class="text-spacing-75">Newsletter</h5>
+<p>Join Our Email List for Tips and Useful Information</p>
+<form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="http://www.celeen.org/bat/rd-mailform.php.html">
+<div class="form-wrap">
+<input class="form-input" id="subscribe-form-5-email" type="email" name="email" data-constraints="@Email @Required">
+<label class="form-label" for="subscribe-form-5-email">Enter Your E-mail</label>
+</div>
+<button class="button button-block button-secondary-4 button-ujarak" type="submit">Subscribe</button>
+</form>
+<div class="group-lg group-middle">
+<p class="text-white">Follow Us</p>
+<div>
+<ul class="list-inline list-inline-sm footer-social-list-2">
+<li><a class="icon fa fa-facebook" href="https://www.facebook.com/celeen.initiative"></a></li>
+<li><a class="icon fa fa-youtube" href="#"></a></li>
+<!-- <li><a class="icon fa fa-twitter" href="#"></a></li> -->
+<li><a class="icon fa fa-linkedin" href="https://www.linkedin.com/in/celeen-initiative-00663418b"></a></li>
+<li><a class="icon fa fa-instagram" href="https://www.instagram.com/celeeninitiative/"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xl-3">
+<div class="oh-desktop">
+<div class="inset-top-18 wow slideInLeft" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInLeft;">
+<h5 class="text-spacing-75">Gallery</h5>
+<div class="row row-10 gutters-10">
+<div class="col-6 col-sm-3 col-lg-6">
+<!-- Thumbnail Classic-->
+<article class="thumbnail thumbnail-mary">
+<div class="thumbnail-mary-figure"><img src="assets/img/logo.png" alt="" width="128" height="120">
+</div>
+<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="#" data-lightgallery="item"><img src="#" alt="" width="128" height="120"></a>
+</div>
+</article>
+</div>
+<div class="col-6 col-sm-3 col-lg-6">
+<!-- Thumbnail Classic-->
+<article class="thumbnail thumbnail-mary">
+<div class="thumbnail-mary-figure"><img src="assets/img/logo.png" alt="" width="128" height="120">
+</div>
+<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="#" data-lightgallery="item"><img src= "alt%3d.html" width="128" height="120"></a>
+</div>
+</article>
+</div>
+<div class="col-6 col-sm-3 col-lg-6">
+<!-- Thumbnail Classic-->
+<article class="thumbnail thumbnail-mary">
+<div class="thumbnail-mary-figure"><img src="assets/img/logo.png" alt="" width="128" height="120">
+</div>
+<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="#" data-lightgallery="item"><img src="#" alt="" width="128" height="120"></a>
+</div>
+</article>
+</div>
+<div class="col-6 col-sm-3 col-lg-6">
+<!-- Thumbnail Classic-->
+<article class="thumbnail thumbnail-mary">
+<div class="thumbnail-mary-figure"><img src="assets/img/logo.png" alt="" width="128" height="120">
+</div>
+<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="#" data-lightgallery="item"><img src="#" alt="" width="128" height="120"></a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-variant-2-bottom-panel">
+<div class="container">
+<!-- Rights-->
+<div class="group-sm group-sm-justify">
+<p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Centre for Leadership & Entrepreneurship</span>. All rights reserved
+</p>
+<p class="rights"><a href="privacy-policy.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<!-- Javascript-->
+<script src="assets/js/core.min.js"></script>
+<script src="assets/js/script-v1.js"></script>
+<script src="assets/js/flipclock.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+var date1 = new Date("2019-10-27");
+var date2 = new Date();
+var dif = (date1 - date2)/(1000);
+console.log(dif);
+var clock = $('.clock').FlipClock(dif, {
+clockFace: 'DailyCounter',
+countdown: true,
+showSeconds: true
+});
+});
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+</body>
+
+</html>
